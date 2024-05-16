@@ -9,7 +9,9 @@ function Section2() {
     <h3>
         Top Customers
     </h3>
-    <Tables />
+   <div className="table" style={{marginTop:"20px"}}>
+    <Tables/>
+   </div>
     
 
 </div>

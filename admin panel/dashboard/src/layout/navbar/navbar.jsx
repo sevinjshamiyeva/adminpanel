@@ -6,10 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUndo,faPalette } from '@fortawesome/free-solid-svg-icons';
 import {faBell} from "@fortawesome/free-regular-svg-icons"
 import Badge from '@mui/material/Badge';
+import Menu2 from '../../components/menu2'
 function Navbar() {
   return (
     <>
-    <nav>
+    <nav >
         <div className="container">
             <div className="profile">
                 <div className="circle">
@@ -24,8 +25,8 @@ function Navbar() {
             <Badge badgeContent={4} color="primary"><FontAwesomeIcon className='icon' icon={faBell} size='2xl' />
             
             </Badge>
-            <FontAwesomeIcon className="icon" icon={faPalette} size='2xl'/>
-
+            <Menu2/>
+            
             </div>
             
 
