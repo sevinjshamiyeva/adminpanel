@@ -30,7 +30,7 @@ export default function TemporaryDrawer() {
       </List>
       <Divider />
       <List  >
-        {[<Link key="dashboard" to="/dashboard" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px"}} ><FontAwesomeIcon  icon={faLayerGroup} size='2xl' /><span style={{fontSize:"18px",marginLeft: "10px"}}>Dashboard</span></Link>, <Link  key="addUser" to="/addUser" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px"}}><FontAwesomeIcon icon={faAddressBook} size='2xl' /><span style={{fontSize:"18px",marginLeft: "10px"}}>Customers</span></Link>, <Link key="customer" to="/customer" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px",color:"#551A8B"}}><FontAwesomeIcon icon={faBox} size='2xl' /><span style={{fontSize:"18px",marginLeft: "10px"}}>Products</span></Link>,<Link key="statistics" to="/statistics" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px",color:"#551A8B"}}><FontAwesomeIcon icon={faChartSimple} size='2xl'/><span style={{fontSize:"18px",marginLeft: "10px"}}>Statistics</span></Link>].map((text, index) => (
+        {[<Link key="dashboard" to="/dashboard" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px"}} ><FontAwesomeIcon  icon={faLayerGroup} size='2xl' /><span style={{fontSize:"18px",marginLeft: "10px"}}>Dashboard</span></Link>, <Link  key="addUser" to="/addUser" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px"}}><FontAwesomeIcon icon={faAddressBook} size='2xl' /><span style={{fontSize:"18px",marginLeft: "10px"}}>Customers</span></Link>, <Link key="customer" to="/product" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px",color:"#551A8B"}}><FontAwesomeIcon icon={faBox} size='2xl' /><span style={{fontSize:"18px",marginLeft: "10px"}}>Products</span></Link>,<Link key="statistics" to="/statistic" style={{display:"flex",alignItems:"center",justifyContent:"center",textDecoration:"none",marginTop:"30px",color:"#551A8B"}}><FontAwesomeIcon icon={faChartSimple} size='2xl'/><span style={{fontSize:"18px",marginLeft: "10px"}}>Statistics</span></Link>].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
              
@@ -52,8 +52,8 @@ export default function TemporaryDrawer() {
       <ul style={{marginTop:"80px",textAlign:"center"}}>
         <li style={{marginTop:"30px"}}><Link to="/dashboard"><FontAwesomeIcon icon={faLayerGroup} size='2xl'/></Link></li>
         <li style={{marginTop:"30px"}}><Link to='/addUser'><FontAwesomeIcon icon={faAddressBook} size='2xl' /></Link></li>
-        <li style={{marginTop:"30px"}}><Link><FontAwesomeIcon icon={faBox} size='2xl' /></Link></li>
-        <li style={{marginTop:"30px"}}><Link><FontAwesomeIcon icon={faChartSimple} size='2xl'/></Link></li>
+        <li style={{marginTop:"30px"}}><Link to="/product"><FontAwesomeIcon icon={faBox} size='2xl' /></Link></li>
+        <li style={{marginTop:"30px"}}><Link to="/statistic"><FontAwesomeIcon icon={faChartSimple} size='2xl'/></Link></li>
       </ul>
     </div>
   );

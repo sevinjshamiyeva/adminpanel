@@ -27,8 +27,31 @@ const Menu2= () => {
       <p style={{marginTop:"30px"}}>
         Choose color
       </p>
-      <div className="blue">
-      <FontAwesomeIcon icon={faPaintRoller} />
+      <div>
+      <div className="blue" style={{display:"flex",marginTop:"30px",gap:"10px"}}>
+      <FontAwesomeIcon icon={faPaintRoller} style={{color:"blue"}} size='xl'/>
+      <span>Blue</span>
+      </div>
+      </div>
+     <div className="red" style={{display:"flex",marginTop:"10px",gap:"10px"}}>
+      <FontAwesomeIcon size='xl' icon={faPaintRoller} style={{color:"red"}} />
+      <span>Red</span>
+
+      </div>
+      <div className="aqua" style={{display:"flex",marginTop:"10px",gap:"10px"}}>
+      <FontAwesomeIcon size='xl' icon={faPaintRoller} style={{color:"aqua"}} />
+      <span>Cyan</span>
+
+      </div>
+      <div className="green" style={{display:"flex",marginTop:"10px",gap:"10px"}}>
+      <FontAwesomeIcon size='xl' icon={faPaintRoller} style={{color:"green"}} />
+      <span>Green</span>
+
+      </div>
+      <div className="orange" style={{display:"flex",marginTop:"10px",gap:"10px"}}>
+      <FontAwesomeIcon icon={faPaintRoller} size='xl' style={{color:"orange"}} />
+      <span>Orange</span>
+
       </div>
       </Drawer>
     </>
